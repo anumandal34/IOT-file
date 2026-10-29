@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartNest | IoT Smart Home</title>
+    <link rel="stylesheet" href="iot.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <a href="#" class="logo">
+          <span class="logo-icon">⌂</span>
+          <span>SmartNest</span>
+        </a>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+          <a href="#overview" class="nav-link active">
+            <span>▦</span> Overview
+          </a>
+          <a href="#devices" class="nav-link"> <span>⌘</span> My Devices </a>
+          <a href="#environment" class="nav-link">
+            <span>☼</span> Environment
+          </a>
+          <a href="#security" class="nav-link"> <span>♧</span> Security </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="profile">
+            <div class="avatar">A</div>
+            <div>
+              <h4>Home Owner</h4>
+              <p>Smart Home User</p>
+            </div>
+          </div>
+          <p class="small-text">Smart living, made simple.</p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="overview">
+        <!-- Header -->
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">YOUR CONNECTED HOME</p>
+            <h1>Smart Home Dashboard</h1>
+            <p class="subtitle">Manage your home from one place.</p>
+          </div>
+
+          <div class="topbar-right">
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Home Online
+            </span>
+            <div class="notification">♧</div>
+          </div>
+        </header>
+
+        <!-- Welcome Banner -->
+        <section class="welcome-card glass">
+          <div class="welcome-text">
+            <span class="tag">SMART LIVING</span>
+            <h2>Your home,<br />your control.</h2>
+            <p>A smarter, safer and more comfortable home starts here.</p>
+            <a href="#devices" class="primary-button"> Explore Devices → </a>
+          </div>
+
+          <div class="home-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="house">⌂</div>
+            <div class="floating-icon light-icon">☼</div>
+            <div class="floating-icon wifi-icon">⌁</div>
+          </div>
+        </section>
+
+        <!-- Summary Cards -->
+        <section class="summary-grid" aria-label="Home summary">
+          <article class="summary-card glass">
+            <div class="summary-top">
+              <span>Connected Devices</span>
+              <span class="summary-icon purple">⌘</span>
+            </div>
+            <h3>08 <small>devices</small></h3>
+            <p>Across your home</p>
+          </article>
+
+          <article class="summary-card glass">
+            <div class="summary-top">
+              <span>Energy Usage</span>
+              <span class="summary-icon yellow">ϟ</span>
+            </div>
+            <h3>12.4 <small>kWh</small></h3>
+            <p>Sample daily reading</p>
+          </article>
+
+          <article class="summary-card glass">
+            <div class="summary-top">
+              <span>Temperature</span>
+              <span class="summary-icon blue">♨</span>
+            </div>
+            <h3>24° <small>C</small></h3>
+            <p>Sample room reading</p>
+          </article>
+
+          <article class="summary-card glass" id="security">
+            <div class="summary-top">
+              <span>Security</span>
+              <span class="summary-icon green">✓</span>
+            </div>
+            <h3>Secure</h3>
+            <p>Demo status display</p>
+          </article>
+        </section>
+
+        <!-- Device Cards -->
+        <section class="devices-section" id="devices">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CONTROL CENTER</p>
+              <h2>My Smart Devices</h2>
+            </div>
+            <span class="device-count">4 DEVICES</span>
+          </div>
+
+          <div class="device-grid">
+            <article class="device-card glass">
+              <div class="device-top">
+                <div class="device-icon bulb">☼</div>
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    checked
+                    aria-label="Smart light visual switch"
+                  />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <h3>Smart Lighting</h3>
+              <p>Living Room</p>
+              <div class="device-footer">
+                <span class="online-dot"></span>
+                <span>Connected</span>
+                <span class="device-value">80%</span>
+              </div>
+            </article>
+
+            <article class="device-card glass">
+              <div class="device-top">
+                <div class="device-icon ac">❄</div>
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    checked
+                    aria-label="Air conditioner visual switch"
+                  />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <h3>Air Conditioner</h3>
+              <p>Bedroom</p>
+              <div class="device-footer">
+                <span class="online-dot"></span>
+                <span>Connected</span>
+                <span class="device-value">22°C</span>
+              </div>
+            </article>
+
+            <article class="device-card glass">
+              <div class="device-top">
+                <div class="device-icon camera">◉</div>
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    checked
+                    aria-label="Security camera visual switch"
+                  />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <h3>Security Camera</h3>
+              <p>Main Entrance</p>
+              <div class="device-footer">
+                <span class="online-dot"></span>
+                <span>Connected</span>
+                <span class="device-value">Active</span>
+              </div>
+            </article>
+
+            <article class="device-card glass">
+              <div class="device-top">
+                <div class="device-icon speaker">♫</div>
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    aria-label="Smart speaker visual switch"
+                  />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <h3>Smart Speaker</h3>
+              <p>Kitchen</p>
+              <div class="device-footer">
+                <span class="online-dot offline"></span>
+                <span>Standby</span>
+                <span class="device-value">Off</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Environment Section -->
+        <section class="environment glass" id="environment">
+          <div>
+            <p class="eyebrow">INDOOR CONDITIONS</p>
+            <h2>Home Environment</h2>
+            <p class="subtitle">Example readings for your smart home.</p>
+          </div>
+
+          <div class="environment-grid">
+            <div class="environment-item">
+              <span class="environment-symbol">🌡</span>
+              <div>
+                <p>Temperature</p>
+                <h3>24°C</h3>
+              </div>
+            </div>
+
+            <div class="environment-item">
+              <span class="environment-symbol">💧</span>
+              <div>
+                <p>Humidity</p>
+                <h3>48%</h3>
+              </div>
+            </div>
+
+            <div class="environment-item">
+              <span class="environment-symbol">☼</span>
+              <div>
+                <p>Air Quality</p>
+                <h3>Good</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>© 2026 SmartNest · IoT Smart Home Dashboard</p>
+          <p>Designed with HTML & CSS</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
